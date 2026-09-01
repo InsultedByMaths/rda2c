@@ -30,7 +30,7 @@ class Args:
     seed: int = 1
     torch_deterministic: bool = True
     cuda: bool = False
-    track: bool = True
+    track: bool = False
     wandb_project_name: str = "rda2c"
     wandb_entity: str | None = None
     capture_video: bool = False

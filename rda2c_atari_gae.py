@@ -67,7 +67,7 @@ class Args:
     """if toggled, cuda will be enabled by default"""
 
     # wandb / logging
-    track: bool = True
+    track: bool = False
     wandb_project_name: str = "rda_atari"
     wandb_entity: Optional[str] = None
     hp_group: Optional[str] = None
