@@ -1,0 +1,16 @@
+# Core
+torch
+numpy
+tyro
+wandb
+
+# MuJoCo (GAE + twin-Q)
+gymnasium[mujoco]
+stable-baselines3
+mujoco
+
+# Atari (envpool + torch.compile path)
+envpool
+gym
+tensordict
+tqdm

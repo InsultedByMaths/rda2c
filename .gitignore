@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.DS_Store
+
+# Experiment artifacts
+runs/
+wandb/
+videos/
+checkpoints/
+*.pt
+*.pth
+logs/
+outputs/
+.hydra/
+
+# Editor / local
+.idea/
+.vscode/
+*.swp
