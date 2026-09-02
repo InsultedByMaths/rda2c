@@ -10,6 +10,8 @@ This repository contains the three paper entrypoints used for the main empirical
 | Atari, GAE labels (vs PPO) | `rda2c_atari_gae.py` |
 | MuJoCo, twin-$Q$ labels (vs SAC) | `rda2c_mujoco_twinq.py` |
 
+The Atari entrypoint requires a CUDA GPU: torch.compile and CUDA graphs are always on. The MuJoCo entrypoints run on CPU or GPU.
+
 Implementations follow the CleanRL single-file style and are adapted from [CleanRL](https://github.com/vwxyzjn/cleanrl). Hyperparameter defaults match the paper appendix tables.
 
 ## Install

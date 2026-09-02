@@ -1,6 +1,4 @@
 # Core
-torch
-numpy
 tyro
 wandb
 
@@ -9,8 +7,12 @@ gymnasium[mujoco]
 stable-baselines3
 mujoco
 
-# Atari (envpool + torch.compile path)
-envpool
-gym
-tensordict
+# Atari (envpool + torch.compile path; requires a CUDA GPU)
+# Pinned to the versions the paper results were produced with. Newer gym/envpool
+# change the reset/step API, and newer torch breaks the compiled Categorical path.
+numpy<2
+gym==0.23.1
+envpool==0.6.6
+torch==2.8.0
+tensordict==0.13.0
 tqdm
